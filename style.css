@@ -1,0 +1,134 @@
+@font-face {
+	font-family: Pistilli Roman; src: url("Pistilli-Roman.otf");
+}
+
+@font-face {
+	font-family: Black Jack; src: url("blackjack.otf");
+}
+
+#games {
+	padding: 50px;
+}
+
+h1 {
+	font-family: Pistilli Roman;
+	text-align: center;
+	font-size: 55px;
+	color: #2B2929;
+	padding: 5px;
+}
+
+h2 {
+	font-family: Black Jack;
+	text-align: center;
+	font-size: 35px;
+}
+
+body {
+	background-color: #FBECDB;
+	padding: 50px;
+}
+
+.column {
+  float: left;
+  border: 2px solid black;
+  width: 480px;
+  margin: 30px 45px;
+  background-color: #FFFAFA;
+  height: 520px;
+}
+
+.pic {
+	width: 480px;
+	height: 360px;
+}
+
+.home {
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	border: 2px solid black;
+	margin: 10px;
+}
+
+.game_word {
+  width: 0;
+  height: 31%;
+  overflow: hidden;
+  transition: .7s ease;
+  background-color: #366397;
+  color: #FFFFFF;
+  visibility: hidden;
+}
+
+.column:hover {
+	opacity: 0.7;
+}
+
+.column:hover .game_word {
+	width: 100%;
+	visibility: visible;
+}
+
+.game_name {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 40px;
+	font-family: Bebas Neue;
+}
+
+.game_detail {
+	font-size: 18px;
+	font-family: Baskerville;
+}
+
+.scratch {
+	padding: 70px 40px;
+	display: block;
+	width: 100%;
+}
+
+.scratch_content {
+	display: block;
+	margin: auto;
+}
+
+#rule_ball {
+	display: none;
+	height: 0;
+}
+
+#rule_ball_button:hover {
+	opacity: 0.5;
+}
+
+#rule_ball_button:hover + #rule_ball {
+	display: block;
+	height: 50px;
+}
+
+#rule_brace {
+	display: none;
+	height: 0;
+}
+
+#rule_brace_button:hover {
+	opacity: 0.5;
+}
+
+#rule_brace_button:hover + #rule_brace {
+	display: block;
+	height: 50px;
+}
+
+.rule {
+	font-family: Baskerville;
+}
+
+.rule p {
+	text-decoration: underline;
+}
+
+iframe {
+	border-radius: 10px;
+}
